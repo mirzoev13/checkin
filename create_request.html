@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    <aside class="dashboard__wrapper">
+        <a href="profile.html"><h1>Мой не сам</h1></a>
+        <div class="dashboard__action">
+            <ul>
+                <li class="accordeon">
+                    <a href="#">Заявки<i class="plus active">+</i></a>
+                    <div class="content active">
+                        <ul>
+                            <li><a href="#">Посмотреть мои заявки</a></li>  
+                            <li><a href="create_request.html">Создать новую</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard__info">
+            <ul>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="login.html">Выйти</a></li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main">
+        <h2>Создание заявки</h2>
+        <form action="">
+            <div class="form__item">
+                <label for="name" class="form__label">Ф.И.О</label>
+                <input id="name" type="text" class="form__input">
+            </div>
+
+            <div class="form__item">
+                <label for="tel" class="form__label">Номер телефона</label>
+                <input id="tel" type="tel" class="form__input">
+            </div>
+
+            <div class="form__item">
+                <label for="date" class="form__label">Желаемая дата получения услуги</label>
+                <input id="date" type="date" class="form__input">
+            </div>
+
+            <div class="form__item">
+                <label for="time" class="form__label">Желаемая услуга</label>
+                <select name="usluga" id="usluga">
+                    <option selected disabled>Выберите услугу</option>
+                    <option value="">Общий клининг</option>
+                    <option value="">Генеральная уборка</option>
+                    <option value="">Химчистка ковров</option>
+                </select>
+                <div>
+                    Нужны дополнительные услуги?
+                <input checked type="checkbox" name="dop_uslugi" id="dop_uslugi">
+                </div>
+            </div>
+
+            <div class="textarea">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form__item">
+                <label for="sallary">Желаемый тип оплаты</label>
+                <select name="sallary" id="">
+                    <option selected disabled>Выберите тип оплаты</option>
+                    <option value="1">Безналичные</option>
+                    <option value="2">Наличные</option>
+                </select>
+            </div>
+
+            <div class="form__action">
+                <a href="profile.html" class="form__btn">Создать заявку</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

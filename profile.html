@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <aside class="dashboard__wrapper">
+        <a href="profile.html"><h1>Мой не сам</h1></a>
+        <div class="dashboard__action">
+            <ul>
+                <li class="accordeon">
+                    <a href="#">Заявки<i class="plus active">+</i></a>
+                    <div class="content active">
+                        <ul>
+                            <li><a href="#">Посмотреть мои заявки</a></li>  
+                            <li><a href="create_request.html">Создать новую</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dashboard__info">
+            <ul>
+                <li><a href="profile.html">Личный кабинет</a></li>
+                <li><a href="login.html">Выйти</a></li>
+            </ul>
+        </div>
+    </aside>
+    <main class="main">
+        <h2>Мои заявки</h2>
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Адресс</th>
+                    <th>Ф.И.О</th>
+                    <th>Номер телефона</th>
+                    <th>Дата подачи</th>
+                    <th>Дата исполнения</th>
+                    <th>Вид услуги</th>
+                    <th>Дополнительные данные</th>
+                    <th>Тип оплаты</th>
+                    <th>Статус</th>
+                </tr>
+
+                <tr>
+                    <td>Заявка №1</td>
+                    <td>Дом Пушкина</td>
+                    <td>Владимир Владимирович Путин</td>
+                    <td>+7(999)999-99-99</td>
+                    <td> 01.01.2020</td>
+                    <td> 02.01.2020</td>
+                    <td>Общий клининг</td>
+                    <td>-</td>
+                    <td>Наличные</td>
+                    <td>Исполнено</td>
+                </tr>
+                <tr>
+                    <td>Заявка №2</td>
+                    <td>Дом Пушкина</td>
+                    <td>Владимир Владимирович Путин</td>
+                    <td>+7(999)999-99-99</td>
+                    <td> 01.01.2020</td>
+                    <td> 02.01.2020</td>
+                    <td>Общий клининг</td>
+                    <td>-</td>
+                    <td>Наличные</td>
+                    <td>Исполнено</td>
+                </tr>
+                <tr>
+                    <td>Заявка №3</td>
+                    <td>Дом Пушкина</td>
+                    <td>Владимир Владимирович Путин</td>
+                    <td>+7(999)999-99-99</td>
+                    <td> 01.01.2020</td>
+                    <td> 02.01.2020</td>
+                    <td>Общий клининг</td>
+                    <td>-</td>
+                    <td>Наличные</td>
+                    <td>Исполнено</td>
+                </tr>
+                <tr>
+                    <td>Заявка №4</td>
+                    <td>Дом Пушкина</td>
+                    <td>Владимир Владимирович Путин</td>
+                    <td>+7(999)999-99-99</td>
+                    <td> 01.01.2020</td>
+                    <td> 02.01.2020</td>
+                    <td>Общий клининг</td>
+                    <td>-</td>
+                    <td>Наличные</td>
+                    <td>Исполнено</td>
+                </tr>
+
+            </table>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
